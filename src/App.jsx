@@ -38,7 +38,7 @@ const App = () => {
   return (
     <div>
       <div className="heading">
-        <h2>User List</h2>
+        <h1>User List</h1>
       </div>
       <input
         type="text"
