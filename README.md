@@ -34,7 +34,7 @@ npm install
 Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 How It Works
 On initial load, the app fetches a list of users from the API.
