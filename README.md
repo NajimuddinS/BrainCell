@@ -1,4 +1,4 @@
-# Users List App
+# Fetching Users List App
 
 This is a simple React app that fetches a list of users from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users) and displays their information. It includes a search feature to filter users by their name.
 
