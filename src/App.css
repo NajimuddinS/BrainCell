@@ -37,6 +37,15 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+.search {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid #383838;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
 }

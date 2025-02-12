@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './App.css'
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -36,20 +37,17 @@ const App = () => {
 
   return (
     <div>
-      <h2>User List</h2>
+      <div className="heading">
+        <h2>User List</h2>
+      </div>
       <input
         type="text"
         placeholder="Search by name..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        style={{
-          width: "100%",
-          padding: "8px",
-          marginBottom: "5px",
-          borderRadius: "4px",
-          border: "1px solid #ccc",
-        }}
+        className='search'
       />
+      <div>
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: "red",fontWeight:500 }}>{error}</p>}
       {!loading && !error && (
@@ -63,7 +61,6 @@ const App = () => {
                 border: "1px solid #ddd",
                 marginBottom: "2px",
                 borderRadius: "4px",
-                textAlign: "left",
               }}
             >
               <h3>{user.name}</h3> 
@@ -72,6 +69,7 @@ const App = () => {
           ))}
         </ul>
       )}
+      </div>
     </div>
   );
 };
